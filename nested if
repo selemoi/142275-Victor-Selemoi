@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string> // Include the string header for using string type
+using namespace std;
+
+int main() {
+    int age;
+    string interest;
+
+    // Get the child's age
+    cout << "Please enter the child's age: ";
+    cin >> age;
+
+    // Check if age is within valid range (4 to 10)
+    if (age >= 4 && age <= 10) {  // Begin primary if
+        cout << "Please enter interest (e.g., soccer, art): ";
+        cin.ignore();  // To clear any leftover newline characters from previous input
+        getline(cin, interest);  // Use getline to capture the full interest string
+
+        // Begin nested if-else logic to assign based on interest
+        if (interest == "soccer") {
+            cout << "Admit and assign to Soccer Play Group" << endl;
+        }
+        else if (interest == "art") {
+            cout << "Admit and assign to Art Group" << endl;
+        }
+        else {
+            cout << "Admit to other group" << endl;
+        }
+    }
+    else {
+        // If age is outside valid range
+        cout << "Admission Unsuccessful. Age is invalid." << endl;
+    }
+
+    return 0;  // Return from main function
+}
