@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+
+    // Ask for the age of the child
+    cout << "Please Enter the age: ";
+    cin >> age;
+
+    // Check which group the child qualifies for based on age
+    if (age >= 7) {
+        cout << "Admit to Grade School" << endl;
+    }
+    else if (age >= 5) {
+        cout << "Admit to Kindergarten" << endl;
+    }
+    else if (age >= 3) {
+        cout << "Admit to Pre-School" << endl;
+    }
+    else if (age >= 1) {
+        cout << "Admit to Play Group" << endl;
+    }
+    else {
+        cout << "Reject. Invalid Age" << endl;
+    }
+
+    return 0;  // End the program
+}
