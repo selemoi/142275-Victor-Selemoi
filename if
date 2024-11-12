@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+
+    // Prompt user to enter age
+    cout << "Please Enter the age: ";
+    cin >> age;
+
+    // Check if the age is greater than or equal to 4
+    if (age >= 4) {
+        cout << "Admit to School" << endl;
+    }
+    else {
+        cout << "Minimum age not reached. Admission Declined" << endl;
+    }
+
+    return 0;  // End the program
+}
