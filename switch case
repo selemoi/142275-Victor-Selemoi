@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int opt;
+
+    // Display timetable options
+    cout << "Hi. This is your BBIT Sem 1 Timetable (May-Aug 2024)" << endl;
+    cout << "\n1. Monday\n2. Tuesday\n3. Wednesday\n4. Thursday\n5. Friday" << endl << endl;
+    cout << "Please select day of choice (e.g. 1, 2, 3, etc...): ";
+    cin >> opt;
+
+    // Switch statement to display classes based on day selected
+    switch (opt) {
+        case 1:  // Monday
+            cout << "Monday Classes\n...................." << endl;
+            cout << "\t1. BBIT 1106: Math for Biz" << endl;
+            cout << "\t2. BBIT 1102: Intro to Programming" << endl;
+            break;
+
+        case 2:  // Tuesday
+            cout << "Tuesday Classes\n..................." << endl;
+            cout << "\t1. BBIT 1104: Ethics" << endl;
+            cout << "\t2. BBIT 1102: Intro to Programming" << endl;
+            break;
+
+        case 3:  // Wednesday
+            cout << "Wednesday Classes\n.................." << endl;
+            cout << "\t1. BBIT 1105: Business Law" << endl;
+            cout << "\t2. BBIT 1101: Business Communication" << endl;
+            break;
+
+        case 4:  // Thursday
+            cout << "Thursday Classes\n..................." << endl;
+            cout << "\t1. BBIT 1106: Math for Biz" << endl;
+            cout << "\t2. BBIT 1104: Ethics" << endl;
+            break;
+
+        case 5:  // Friday
+            cout << "Friday Classes\n..................." << endl;
+            cout << "\t1. BBIT 1107: Project Management" << endl;
+            cout << "\t2. BBIT 1103: Digital Marketing" << endl;
+            break;
+
+        default:  // Invalid input
+            cout << "Invalid Input" << endl;
+            break;
+    }
+
+    return 0;
+}
